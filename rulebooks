@@ -1,0 +1,7 @@
+- name: Listen For Web Events
+  hosts: all
+  sources:
+    - name: check event
+      ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 9900
